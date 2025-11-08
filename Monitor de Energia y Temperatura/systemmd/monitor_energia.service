@@ -1,0 +1,15 @@
+# monitor_energia/systemd/monitor_energia.service
+[Unit]
+Description=Monitor de Energia y Temperatura
+After=network.target
+
+[Service]
+Type=simple
+User=TU_USUARIO
+WorkingDirectory=/ruta/a/monitor_energia
+ExecStart=/usr/bin/python3 /ruta/a/monitor_energia/monitor.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

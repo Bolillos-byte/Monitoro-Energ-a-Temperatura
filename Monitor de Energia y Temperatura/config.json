@@ -1,0 +1,8 @@
+{
+  "interval_seconds": 60,
+  "temperature_sensor_priority": ["coretemp", "acpitz"],
+  "log_dir": "logs",
+  "write_header": true,
+  "base_watts": 30,
+  "max_watts": 95
+}
